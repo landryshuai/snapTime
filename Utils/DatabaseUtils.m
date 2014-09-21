@@ -52,7 +52,14 @@
     [[DatabaseUtils getDatabaseQueue] inDatabase:^(FMDatabase *db) {
         //查询数据
         NSMutableArray * result = [[NSMutableArray alloc] initWithCapacity:10];
-        FMResultSet *fmResults = [db executeQuery:@"select * from time_snaps;"];
+        long dayTimeInterval = 24 * 60 * 60;
+        long beginDate = (((long)time)/dayTimeInterval) * dayTimeInterval;
+        //TODO BUG: 时间差8个时区。原因是我们的所在的时区相关。需要减掉。
+        beginDate = beginDate - 8 * 60 * 60;
+        long endDate = beginDate + dayTimeInterval;
+        FMResultSet *fmResults = [db executeQuery:@"select * from time_snaps where time >= ? AND time <= ?;",
+            [NSNumber numberWithLong:beginDate],
+            [NSNumber numberWithLong:endDate]];
         while (fmResults.next) {
             NSDate *date = [NSDate dateWithTimeIntervalSince1970:[fmResults longForColumn:@"time"]];
             NSString *content = [fmResults stringForColumn:@"content"];

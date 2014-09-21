@@ -40,6 +40,8 @@
 {
     [super viewWillAppear:animated];
     [self resetData];
+    NSString *string1 = [self.formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:1411257600]];
+    NSLog(@"%@",string1);
 }
 
 - (IBAction)addClick:(id)sender {

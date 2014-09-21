@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59B03368-5E15-4BFA-8DD3-AB1557565BED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SnapTime</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0BEC55A4093C80E1327DA88662348A84E245F80C</key>
+		<string>https://github.com/landryshuai/snapTime.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SnapTime.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BEC55A4093C80E1327DA88662348A84E245F80C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/landryshuai/snapTime.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0BEC55A4093C80E1327DA88662348A84E245F80C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BEC55A4093C80E1327DA88662348A84E245F80C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SnapTime</string>
+		</dict>
+	</array>
+</dict>
+</plist>

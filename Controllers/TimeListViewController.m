@@ -36,6 +36,11 @@
     if (!self.showDate) {
         date = [NSDate date];
     }
+    [self refreshWithDate:date];
+}
+
+-(void)refreshWithDate:(NSDate *)date
+{
     //去数据库查询时间
     [DatabaseUtils queryTimeRecord:[date timeIntervalSince1970] withResult:^(NSArray *result) {
         [self.timeRecords removeAllObjects];
